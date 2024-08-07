@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "TT Commons";
+    src: url("../fonts/tt-commons/TTCommonsRegular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  :root {
+    --background-color: #ffffff;
+
+    --border-color: rgba(0, 0, 0, 0.1);
+
+    --dark-color: #101010;
+    --light-color: #ffffff;
+
+    --primary-color: #e2beff;
+    --primary-text-color: rgb(226, 190, 255);
+
+    --secondary-color: #f3f3f3;
+
+    --large-radius: 999px;
+    --small-radius: 12px;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html {
+    font-size: 8px;
+  }
+  @screen sm {
+    html {
+      font-size: 4px;
+    }
+  }
+  @screen lg {
+    html {
+      font-size: 6px;
+    }
+  }
+  @screen xl {
+    html {
+      font-size: 10px;
+    }
+  }
+  body {
+    @apply bg-background;
+    @apply font-mainFont;
+  }
+}
+
+@layer components {
+  .hv-scale {
+    @apply inline-block transition hover:scale-105;
+  }
+  .hv-shadow {
+    @apply hover:shadow-md;
+  }
+}
