@@ -1,8 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 TypeScript blog
+Ссылка на деплой - https://heartfelt-torte-a76207.netlify.app/
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+## Установка
 
 Make sure to install the dependencies:
 
@@ -20,7 +20,7 @@ yarn install
 bun install
 ```
 
-## Development Server
+## Развертывание на локальном пк
 
 Start the development server on `http://localhost:3000`:
 
@@ -38,7 +38,7 @@ yarn dev
 bun run dev
 ```
 
-## Production
+## Развертывание
 
 Build the application for production:
 
@@ -55,21 +55,3 @@ yarn build
 # bun
 bun run build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
